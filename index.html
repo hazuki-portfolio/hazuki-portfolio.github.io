@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hazuki Sato-portfoliosite</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/af9caabd25.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- himawari-background -->
+  <div class="himawari-left">
+    <img src="img/himawari-left.png">
+  </div>
+  <div class="himawari-right">
+    <img src="img/himawari-right.png">
+  </div>
+
+  <!-- top-navigation -->
+  <section class="header" id="top">
+    <div class="logo">Hazuki Sato</div>
+    <div class="nav">
+      <div class="menu-item" id="menu-top"><a href="#top">Top</a></div>
+      <div class="menu-item" id="menu-artmake"><a href="artmake.html">Art make</a></div>
+      <div class="menu-item" id="menu-hairmake"><a href="hairmake.html">Hair make</a></div>
+      <div class="menu-item" id="menu-about"><a href="#about">About me</a></div>
+      <div class="menu-item" id="menu-contact"><a href="#contact">Contact</a></div>
+      <div class="menu-item" id="menu-insta"><a href="https://www.instagram.com/haaazuki.hair" target="_blank"><i class="fab fa-instagram"></i></a></div>
+    </div>
+    <button class="menu-trigger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </section>
+
+  <!-- top-slide -->
+  <div class="slide">
+    <img src="img/art1.jpeg">
+    <img src="img/art2.jpeg">
+    <img src="img/art3.jpeg">
+    <img src="img/art4.jpeg">
+    <img src="img/art5.jpeg">
+  </div>
+  <div class="slide-speed">
+    <p>
+      <input type="range" id="slide_speed" value="2000" min="100" max="10000">
+    </p>
+  </div>
+
+
+  <!-- top-artmake-container -->
+  <section class="artmake-container">
+    <div class="title"><p>Art make</p><div class="title-border"></div></div>
+    <div class="img-container">
+      <img src="img/art1.jpeg">
+      <img src="img/art2.jpeg">
+      <img src="img/art3.jpeg">
+      <img src="img/art4.jpeg">
+      <img src="img/art5.jpeg">
+      <img src="img/art6.jpeg">
+    </div>
+    <div class="more"><a href="#">more<img src="img/arrow.png"></a></div>
+  </section>
+
+  <!-- top-hairmake-container -->
+  <section class="hairmake-container">
+    <div class="title"><p>Hair make</p><div class="title-border"></div></div>
+    <div class="img-container">
+      <img src="img/hair1.jpeg">
+      <img src="img/hair2.jpeg">
+      <img src="img/hair3.jpeg">
+      <img src="img/hair4.jpeg">
+      <img src="img/hair5.jpeg">
+      <img src="img/hair6.jpeg">
+    </div>
+    <div class="more"><a href="#">more<img src="img/arrow.png"></a></div>
+  </section>
+
+  <!-- top-about -->
+  <section class="about-container" id="about">
+    <div class="title"><p>About me</p><div class="title-border"></div></div>
+    <div class="plofile-container">
+      <div class="plofile-img"><img src="img/himawari.png"></div>
+      <div class="plofile-comment">
+        <p>佐藤 はづき</p>
+        <p>東京ベルエポック美容専門学校を卒業後、VISAGEに美容師アシスタントとして入社。<br>
+        その後デビューを果たし、スタイリストとして勤務したのち、現在はフリーのヘアメイクアップアーティストとして活動中。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- top-contact -->
+  <section class="contact-container" id="contact">
+    <div class="title"><p>Contact</p><div class="title-border"></div></div>
+    <div class="infomation"><p>お仕事のご依頼はこちらにご連絡ください。</p></div>
+    <div class="mail-adress"><a href="mailto:momochikuwa0531&#64;gmail.com"><p>momochikuwa0531@gmail.com</p></a></div>
+  </section>
+
+  <!-- footer -->
+  <section class="footer">
+    <p>ⓒ　Hazuki Sato</p>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

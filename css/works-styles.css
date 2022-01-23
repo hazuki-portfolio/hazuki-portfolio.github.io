@@ -1,0 +1,325 @@
+body {
+  background-color: #fbffcb;
+  width: 100%;
+  position: relative;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+/* top navigation */
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f8ffa2;
+}
+
+.menu-item {
+  width: 100%;
+  height: auto;
+  padding: .5em 1em;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.menu-item a:hover {
+  color: gray;
+}
+
+.nav {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .3s linear;
+}
+
+
+.nav.is-active {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.nav.close {
+  opacity: 0;
+}
+
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+.menu-trigger {
+  width: 25px;
+  height: 22px;
+  background: none;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+  top: 22px;
+  right: 30px;
+  z-index: 1;
+}
+
+.menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  border-radius: 4px;
+}
+
+.menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+  top: 10px;
+}
+
+.menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+
+.menu-trigger.active span:nth-of-type(1) {
+  transform: translateY(10px) rotate(-45deg);
+  z-index: 1;
+}
+
+.menu-trigger.active span:nth-of-type(2) {
+  opacity: 0;
+  z-index: 1;
+}
+
+.menu-trigger.active span:nth-of-type(3) {
+  transform: translateY(-10px) rotate(45deg);
+  z-index: 1;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+/* slide */
+
+main {
+  width: 300px;
+  margin: 0 auto;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#main {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+nav {
+  display: none;
+}
+
+#next, #prev {
+  display: none;
+}
+
+.thumbnails {
+  display: grid;
+  grid-template-columns: repeat(5, 56px);
+  gap: 5px;
+}
+
+.thumbnails li {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.thumbnails li:hover,
+.thumbnails li.current {
+  opacity: 1;
+}
+
+.thumbnails img {
+  width: 56px;
+}
+
+/* フッター */
+
+.footer {
+  width: 100%;
+  height: 30px;
+  background-color: #f8ffa2;
+  margin-top: 40px;
+  padding-top: 10px;
+}
+
+.footer p {
+  font-size: 10px;
+  transform: scale(0.8);
+  text-align: center;
+}
+
+@media screen and (min-width:600px) {
+  
+  /* top navigation */
+
+.menu-item a {
+  font-size: 20px;
+}
+
+.menu-trigger {
+  width: 50px;
+  height: 44px;
+  top: 30px;
+  right: 30px;
+}
+
+.menu-trigger span {
+  height: 4px;
+  background-color: #000;
+  border-radius: 4px;
+}
+
+.menu-trigger span:nth-of-type(2) {
+  top: 20px;
+}
+
+.menu-trigger.active span:nth-of-type(1) {
+  transform: translateY(20px) rotate(-45deg);
+}
+
+.menu-trigger.active span:nth-of-type(3) {
+  transform: translateY(-20px) rotate(45deg);
+}
+
+.logo {
+  height: 100px;
+  padding-left: 25px;
+  font-size: 30px;
+}
+
+/* slide */
+
+main {
+  width: 500px;
+}
+
+#main {
+  width: 500px;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+.thumbnails {
+  grid-template-columns: repeat(5, 90px);
+  gap: 10px;
+}
+
+.thumbnails img {
+  width: 90px;
+}
+
+  /* フッター */
+
+.footer {
+  width: 100%;
+  height: 50px;
+  margin-top: 80px;
+  padding-top: 16px;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+}
+
+@media screen and (min-width:1025px) {
+  
+  /* top navigation */
+
+.menu-item a {
+  font-size: 30px;
+}
+
+.logo {
+  height: 100px;
+  padding-left: 35px;
+  padding-top: 20px;
+  font-size: 46px;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+/* slide */
+
+main {
+  width: 700px;
+}
+
+#main {
+  width: 700px;
+  height: 700px;
+  margin-bottom: 40px;
+}
+
+.thumbnails {
+  grid-template-columns: repeat(5, 120px);
+  gap: 20px;
+}
+
+.thumbnails img {
+  width: 120px;
+}
+
+
+
+/* フッター */
+
+.footer {
+  height: 60px;
+  margin-top: 100px;
+  padding-top: 16px;
+}
+
+.footer p {
+  font-size: 20px;
+}
+
+}
