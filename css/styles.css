@@ -530,6 +530,20 @@ header {
 
 /* 各セクションのスタイル */
 
+.up {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.up.show {
+  opacity: 1;
+  transform: none;
+}
+
+.op {
+  transform: translate(0, 100px);
+}
+
 .artmake-container,.hairmake-container, .about-container, .contact-container {
   width: 80%;
   margin: 60px auto 0 auto;
